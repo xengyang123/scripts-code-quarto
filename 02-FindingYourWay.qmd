@@ -4,6 +4,10 @@ author: "Your Name"
 output: html_document
 ---
 
+Instructions: Once you have finished this assignment, render the document (Ctrl/Cmd-Shift-K or the Render button). Commit the qmd file and any other files you have changed to the repository and push your changes.
+
+In Canvas, submit a link to your github repository containing the updated files.
+
 # MadLibs
 
 ## Running a Python Script at the command line
