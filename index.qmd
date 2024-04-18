@@ -1,7 +1,8 @@
 ---
-title: "Homework 2: Finding Your Way in R and Python"
+title: "Homework: Finding Your Way in R and Python"
+execute:
+  error: true
 author: "Your Name"
-categories: HW
 output: html_document
 ---
 
