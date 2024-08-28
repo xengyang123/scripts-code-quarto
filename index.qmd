@@ -14,7 +14,7 @@ Note: Submitting your link in Canvas lets me know that you are ready for me to g
 
 # Modes of Execution
 
-Consider the 6 counting words examples in the [textbook module](https://srvanderplas.github.io/stat-computing-r-python/part-tools/03-scripts-notebooks.html#a-short-history-of-talking-to-computers) (they are in 3 separate 'your turn' sections). Look at the code, and then at the information provided for each example. What is different? What is the same? Write 2-3 sentences describing how script mode, interactive mode, and command-line mode differ in R and Python.
+Consider the 6 counting words examples in the [textbook module](https://srvanderplas.github.io/stat-computing-r-python/part-tools/04-scripts-notebooks.html#a-short-history-of-talking-to-computers) (they are in 3 separate 'your turn' sections). Look at the code, and then at the information provided for each example. What is different? What is the same? Write 2-3 sentences describing how script mode, interactive mode, and command-line mode differ in R and Python.
 
 ---
 
@@ -51,7 +51,7 @@ Use the chunk below to define variables $a$, $b$, and $c$, and then define $x1$ 
 
 # Debugging practice
 
-Look at the data frame below, which contains 3 columns: `Name`, `Salary`, and `Hire.Year`. You've read in this data from the [data file online](https://srvanderplas.github.io/stat151-homework/3-data.tsv) and ideally, you want to plot `Hire.Year` on the x-axis and `Salary` on the y-axis (code to do this is provided).
+Look at the data frame below, which contains 3 columns: `Name`, `Salary`, and `Hire.Year`. You've read in this data from the [data file online](https://github.com/unl-statistics/stat850/blob/main/homework/02-data.tsv) and ideally, you want to plot `Hire.Year` on the x-axis and `Salary` on the y-axis (code to do this is provided).
 
 Unfortunately, the data isn't reading in properly. Identify the problem, propose a solution, and try to implement your solution using functions on the R reference card.
 
