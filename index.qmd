@@ -31,7 +31,7 @@ In this section, you'll demonstrate that you understand how to solve simple math
 
 $$a^2 + b^2 = c^2$$
 
-Use the chunk below to define variables $a$, $b$, and $c$, where you define the values of $a$ and $b$, and $c$ is determined mathematically. You may need to find the square root function in R to make this work.
+Use the chunk below to define variables $a$, $b$, and $c$, where you define values (of your choice) for $a$ and $b$. Based on the choice of $a$ and $b$, determine $c$ using the mathematical formula. You may need to find the square root function in R to make this work.
 
 ```{r pythagorean-theorem-r}
 # Your pythagorean theorem code goes here
