@@ -1,5 +1,5 @@
 ---
-title: "Homework 2: Finding Your Way in R and Python"
+title: "Homework 2: Finding Your Way in R and Python."
 execute:
   error: true
 author: "Xeng Yang"
