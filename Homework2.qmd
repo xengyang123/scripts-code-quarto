@@ -19,7 +19,7 @@ Consider the 6 counting words examples in the [textbook module](https://srvander
 ---
 
 Interactive Mode is to communicate with the machine, we can ask the machine to do the tasks that we have as users.
-Script mode is where the user can type up their algorithm and run it all at once.
+Script mode is where the user can type up their algorithm and run it all at once but the syntax might differ from R to python.
 Command-line mode is where each line of the script the user can run at a time.
 
 ---
