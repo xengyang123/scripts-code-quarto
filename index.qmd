@@ -1,8 +1,8 @@
 ---
-title: "Homework: Finding Your Way in R and Python"
+title: "Homework 2: Finding Your Way in R and Python"
 execute:
   error: true
-author: "Your Name"
+author: "Xeng Yang"
 output: html_document
 ---
 
@@ -18,7 +18,9 @@ Consider the 6 counting words examples in the [textbook module](https://srvander
 
 ---
 
-Replace this line of text with your 2-3 sentences about script-mode, interactive mode, and command-line mode in R and Python
+Interactive Mode is to communicate with the machine, we can ask the machine to do the tasks that we have as users.
+Script mode is where the user can type up their algorithm and run it all at once.
+Command-line mode is where each line of the script the user can run at a time.
 
 ---
 
@@ -34,8 +36,13 @@ $$a^2 + b^2 = c^2$$
 Use the chunk below to define variables $a$, $b$, and $c$, where you define the values of $a$ and $b$, and $c$ is determined mathematically. You may need to find the square root function in R to make this work.
 
 ```{r pythagorean-theorem-r}
-# Your pythagorean theorem code goes here
-
+# Your Pythagorean theorem code goes here
+a = 2
+b = 12
+c_squared = a^2+b^2
+c_squared
+c = sqrt(c_squared)
+c
 ```
 
 ## Quadratic Formula in Python
@@ -46,7 +53,19 @@ Use the chunk below to define variables $a$, $b$, and $c$, and then define $x1$ 
 
 ```{python quad-formula-py}
 # Your quadratic formula code goes here
+import math
 
+a = 2
+b = 12
+c_squared = pow(a,2)+pow(b,2)
+c = math.sqrt(c_squared)
+
+
+sol1 = (-b-math.sqrt(pow(b,2)-4*a*c))/2*a
+print("sol1 = ", sol1)
+
+sol2 = (-b+math.sqrt(pow(b,2)-4*a*c))/2*a
+print("sol2 = ",sol2)
 ```
 
 # Debugging practice
@@ -70,6 +89,8 @@ ggplot(salary, aes(x = Hire.Year, y = Salary, label = Name)) +
 
 # This displays the salary object
 salary
+
+str(salary$Salary)
 ```
 
 ------------------------------------------------------------------------
@@ -80,5 +101,17 @@ Here is how I solved the problem:
 
 ```{r cleaning-the-data-r}
 # Your implementation code goes here
+salary <- read.table("02-data.tsv", sep = "\t", header = T)
+str(salary$Salary)
+
+salary$Salary<-as.numeric(salary$Salary) #changing column Salary from characters to numeric
+str(salary$Salary)   # One of the values was NA 
+
+salary[is.na(salary)]<-67872 # Replace NA with 67872
+str(salary$Salary)
+
+library(ggplot2)
+ggplot(salary, aes(x = Hire.Year, y = Salary, label = Name)) + 
+  geom_label()
 
 ```
